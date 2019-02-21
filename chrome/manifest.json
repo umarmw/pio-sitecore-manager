@@ -1,0 +1,33 @@
+{
+
+  "description": "Easy URL Manager for Sitecore",
+  "manifest_version": 2,
+  "name": "PIO Sitecore Manager",
+  "version": "1.0",
+  "homepage_url": "https://github.com/umarmw/pio-sitecore-manager.git",
+  "icons": {
+    "48": "icons/pio-48.png"
+  },
+
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/pio-32.png",
+    "theme_icons": [{
+        "light": "icons/pio-32.png",
+        "dark": "icons/pio-32.png",
+        "size": 32
+    }],
+    "default_title": "PIO Sitecore Manager",
+    "default_popup": "popup/url-manager.html"
+  },
+
+  "web_accessible_resources": [
+    "pio/logo.png"
+  ]
+
+}
