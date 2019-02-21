@@ -11,8 +11,15 @@
 
   "permissions": [
     "activeTab",
-    "tabs"
+    "tabs",
+    "storage"
   ],
+
+  "applications": {
+    "gecko": {
+      "id": "addon@proximity.mu"
+    }
+  },
 
   "browser_action": {
     "default_icon": "icons/pio-32.png",

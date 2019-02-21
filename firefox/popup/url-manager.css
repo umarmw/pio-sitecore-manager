@@ -12,14 +12,18 @@ body {
 
 header {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     border-bottom: 1px solid #ccc;
+    background-color: #f1efef;
+    padding: 10px;
 }
 
 header h1 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
-    padding-left: 10px;
+    padding: 0 10px;
+    text-align: center;
 }
 
 ul.menu {
@@ -83,4 +87,50 @@ li.item-list a span {
 .loading-container {
     display: flex;
     justify-content: center;
+}
+
+.settings{
+    cursor: pointer;
+}
+
+.popin {
+    background-color: #f1efef;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.popin .form-element {
+    display: flex;
+}
+
+.popin form input[type="text"]{
+    width: 94%;
+    padding: 10px 5px;
+    margin-left: 19px;
+}
+.popin form input[type="reset"]{
+    width: 19px;
+    font-size: 18px;
+    padding: 9px 6px;
+    border:none;
+    cursor: pointer;
+}
+
+.popin .form-action {
+    margin-top:10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.popin form input[type="submit"]{
+    width: 120px;
+    padding: 9px;
+}
+.popin form input[type="button"]{
+    width: 120px;
+    padding: 9px;
+}
+
+.popin-message {
+    padding: 5px 20px;
+    color: indianred;
 }
