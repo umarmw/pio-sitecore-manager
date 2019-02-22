@@ -52,6 +52,14 @@ function listenForClicks() {
             restoreOptions();
         }
 
+        if (e.target.classList.contains("reset")) {
+            document.querySelector("#collection-url").value = "";
+        }
+
+        if (e.target.classList.contains("save-settings")) {
+            saveOptions(e);
+        }
+
     });
 }
 
@@ -80,7 +88,6 @@ function saveOptions(e) {
         document.querySelector("#popin-message").innerHTML = "";
         document.querySelector("#popin-message").style.display = 'none';
         safari.extension.settings.feed = url;
-        // browser.storage.sync.set({ feed: url });
         hideSettings();
         bootload(url);
     }
@@ -112,4 +119,3 @@ function bootload(url){
 
 document.addEventListener("DOMContentLoaded", listenForClicks);
 document.addEventListener("DOMContentLoaded", restoreOptions);
-document.querySelector("form").addEventListener("submit", saveOptions);
